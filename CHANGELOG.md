@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.1.2] - 2026-04-29
+
+### Fixed
+
+- Added explicit `"files": ["dist", "README.md"]` to all app and package `package.json` files so that `README.md` is reliably included in the npm tarball and rendered on the npm registry page for each package
+
+---
+
 ## [0.1.1] - 2026-04-29
 
 ### Added
@@ -48,5 +56,6 @@ taskforge CLI
 
 ---
 
+[0.1.2]: https://github.com/tomaszczechowski/taskforge/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/tomaszczechowski/taskforge/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/tomaszczechowski/taskforge/releases/tag/v0.1.0

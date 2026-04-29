@@ -1,6 +1,6 @@
 {
     "name": "@taskforge-ai/jira-client",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Jira REST API v3 client for issue fetching, commenting, and workflow transitions used by the Taskforge agent.",
     "author": "Tomasz Czechowski <tomasz@czechowski.pl>",
     "license": "Apache-2.0",
@@ -12,6 +12,10 @@
     "type": "module",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md"
+    ],
     "scripts": {
         "build": "tsc",
         "dev": "tsx src/index.ts"
