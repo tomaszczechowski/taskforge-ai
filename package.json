@@ -5,6 +5,7 @@
   "author": "Tomasz Czechowski <tomasz@czechowski.pl>",
   "license": "Apache-2.0",
   "type": "module",
+  "private": true,
   "packageManager": "pnpm@10.33.2",
   "scripts": {
     "dev:worker": "tsx apps/worker/src/index.ts",
@@ -14,7 +15,7 @@
     "build:cli": "pnpm --filter @taskforge-ai/cli build",
     "start:worker": "pnpm --filter @taskforge-ai/worker start",
     "start:mcp": "pnpm --filter @taskforge-ai/mcp-server start",
-    "publish:packages": "pnpm --filter \"@taskforge-ai/*\" publish",
+    "publish:packages": "pnpm --filter \"@taskforge-ai/*\" publish --access public",
     "format": "prettier --write \"apps/**/*.ts\" \"packages/**/*.ts\"",
     "format:check": "prettier --check \"apps/**/*.ts\" \"packages/**/*.ts\"",
     "lint": "eslint \"apps/**/*.ts\" \"packages/**/*.ts\"",
