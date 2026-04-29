@@ -69,19 +69,19 @@ importers:
       '@inquirer/prompts':
         specifier: ^7.0.0
         version: 7.10.1(@types/node@25.6.0)
-      '@taskforge/agent-core':
+      '@taskforge-ai/agent-core':
         specifier: workspace:*
         version: link:../../packages/agent-core
-      '@taskforge/jira-client':
+      '@taskforge-ai/jira-client':
         specifier: workspace:*
         version: link:../../packages/jira-client
-      '@taskforge/mcp-server':
+      '@taskforge-ai/mcp-server':
         specifier: workspace:*
         version: link:../mcp-server
-      '@taskforge/shared':
+      '@taskforge-ai/shared':
         specifier: workspace:*
         version: link:../../packages/shared
-      '@taskforge/worker':
+      '@taskforge-ai/worker':
         specifier: workspace:*
         version: link:../worker
       chalk:
@@ -105,13 +105,13 @@ importers:
       '@anthropic-ai/sdk':
         specifier: ^0.39.0
         version: 0.39.0
-      '@taskforge/github-client':
+      '@taskforge-ai/github-client':
         specifier: workspace:*
         version: link:../../packages/github-client
-      '@taskforge/jira-client':
+      '@taskforge-ai/jira-client':
         specifier: workspace:*
         version: link:../../packages/jira-client
-      '@taskforge/shared':
+      '@taskforge-ai/shared':
         specifier: workspace:*
         version: link:../../packages/shared
       body-parser:
@@ -139,16 +139,16 @@ importers:
       '@anthropic-ai/sdk':
         specifier: ^0.39.0
         version: 0.39.0
-      '@taskforge/agent-core':
+      '@taskforge-ai/agent-core':
         specifier: workspace:*
         version: link:../../packages/agent-core
-      '@taskforge/github-client':
+      '@taskforge-ai/github-client':
         specifier: workspace:*
         version: link:../../packages/github-client
-      '@taskforge/jira-client':
+      '@taskforge-ai/jira-client':
         specifier: workspace:*
         version: link:../../packages/jira-client
-      '@taskforge/shared':
+      '@taskforge-ai/shared':
         specifier: workspace:*
         version: link:../../packages/shared
     devDependencies:
@@ -170,7 +170,7 @@ importers:
       '@anthropic-ai/sdk':
         specifier: ^0.39.0
         version: 0.39.0
-      '@taskforge/shared':
+      '@taskforge-ai/shared':
         specifier: workspace:*
         version: link:../shared
     devDependencies:
@@ -189,7 +189,7 @@ importers:
       '@octokit/rest':
         specifier: ^20.0.0
         version: 20.1.2
-      '@taskforge/shared':
+      '@taskforge-ai/shared':
         specifier: workspace:*
         version: link:../shared
     devDependencies:
@@ -205,7 +205,7 @@ importers:
 
   packages/jira-client:
     dependencies:
-      '@taskforge/shared':
+      '@taskforge-ai/shared':
         specifier: workspace:*
         version: link:../shared
       axios:

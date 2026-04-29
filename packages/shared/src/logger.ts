@@ -23,7 +23,7 @@ import { createLogger, format, transports } from "winston";
  *
  * Usage:
  * ```ts
- * import { logger } from "@taskforge/shared";
+ * import { logger } from "@taskforge-ai/shared";
  * logger.info("[ticket] processing started");
  * logger.warn("[git] nothing to commit");
  * logger.error("[jira] transition failed", { error });

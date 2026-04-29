@@ -1,5 +1,5 @@
 {
-  "name": "@taskforge/cli",
+  "name": "@taskforge-ai/cli",
   "version": "0.1.0",
   "description": "AI agent that implements tickets from Jira, and more",
   "author": "Tomasz Czechowski <tomasz@czechowski.pl>",
@@ -23,11 +23,11 @@
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",
     "@inquirer/prompts": "^7.0.0",
-    "@taskforge/shared": "workspace:*",
-    "@taskforge/agent-core": "workspace:*",
-    "@taskforge/jira-client": "workspace:*",
-    "@taskforge/mcp-server": "workspace:*",
-    "@taskforge/worker": "workspace:*",
+    "@taskforge-ai/shared": "workspace:*",
+    "@taskforge-ai/agent-core": "workspace:*",
+    "@taskforge-ai/jira-client": "workspace:*",
+    "@taskforge-ai/mcp-server": "workspace:*",
+    "@taskforge-ai/worker": "workspace:*",
     "chalk": "^5.0.0",
     "commander": "^12.0.0",
     "dotenv": "^16.0.0",

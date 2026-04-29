@@ -1,5 +1,5 @@
 {
-    "name": "@taskforge/github-client",
+    "name": "@taskforge-ai/github-client",
     "version": "0.1.0",
     "description": "GitHub API client for branch and pull request management used by the Taskforge agent.",
     "author": "Tomasz Czechowski <tomasz@czechowski.pl>",
@@ -17,7 +17,7 @@
         "dev": "tsx src/index.ts"
     },
     "dependencies": {
-        "@taskforge/shared": "workspace:*",
+        "@taskforge-ai/shared": "workspace:*",
         "@octokit/rest": "^20.0.0"
     },
     "devDependencies": {

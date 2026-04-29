@@ -16,7 +16,7 @@
 
 import { execSync } from "child_process";
 import { existsSync } from "fs";
-import { logger } from "@taskforge/shared";
+import { logger } from "@taskforge-ai/shared";
 
 /** Thin wrapper around `execSync` that inherits stdio, streaming output to the terminal. */
 function exec(cmd: string, cwd?: string) {

@@ -17,7 +17,7 @@
 import chalk from "chalk";
 import ora from "ora";
 import { existsSync } from "fs";
-import { Ticket } from "@taskforge/jira-client";
+import { Ticket } from "@taskforge-ai/jira-client";
 
 export interface CommandList {
     path: string;
@@ -32,7 +32,7 @@ export const list = async () => {
     const spinner = ora("Fetching tickets...").start();
 
     try {
-        const { getAssignedTickets } = await import("@taskforge/worker");
+        const { getAssignedTickets } = await import("@taskforge-ai/worker");
         const tickets = await getAssignedTickets(process.env.JIRA_USER_NAME as string);
 
         spinner.stop();

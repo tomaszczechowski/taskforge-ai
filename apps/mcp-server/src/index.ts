@@ -16,9 +16,9 @@
 
 import express from "express";
 import bodyParser from "body-parser";
-import { github } from "@taskforge/github-client";
-import { jira } from "@taskforge/jira-client";
-import { logger } from "@taskforge/shared";
+import { github } from "@taskforge-ai/github-client";
+import { jira } from "@taskforge-ai/jira-client";
+import { logger } from "@taskforge-ai/shared";
 
 const app = express();
 app.use(bodyParser.json());

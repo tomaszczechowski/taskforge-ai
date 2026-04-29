@@ -42,12 +42,12 @@ export const run = async (ticketId: string, opts: CommandRun) => {
     const spinner = ora(`Fetching ${chalk.bold(ticketId)}...\n`).start();
 
     try {
-        const { jira } = await import("@taskforge/jira-client");
+        const { jira } = await import("@taskforge-ai/jira-client");
         const issue = await jira.getIssue(ticketId);
         spinner.succeed(`Found: ${chalk.bold(issue.fields.summary)}`);
 
         if (opts.dryRun) {
-            const { generatePlan } = await import("@taskforge/agent-core");
+            const { generatePlan } = await import("@taskforge-ai/agent-core");
             const planSpinner = ora("Generating plan...").start();
             const plan = await generatePlan(issue, config);
 
@@ -63,7 +63,7 @@ export const run = async (ticketId: string, opts: CommandRun) => {
             return;
         }
 
-        const { processTicket } = await import("@taskforge/worker");
+        const { processTicket } = await import("@taskforge-ai/worker");
 
         await processTicket(issue, config, 0);
 

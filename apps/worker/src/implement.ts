@@ -15,8 +15,8 @@
  */
 
 import axios from "axios";
-import { generatePlan, applyChanges, runTests } from "@taskforge/agent-core";
-import { JiraIssue, JiraTransition, logger, TaskForgeConfigAgent, toAdf, toAdfWithCode } from "@taskforge/shared";
+import { generatePlan, applyChanges, runTests } from "@taskforge-ai/agent-core";
+import { JiraIssue, JiraTransition, logger, TaskForgeConfigAgent, toAdf, toAdfWithCode } from "@taskforge-ai/shared";
 
 const MCP = process.env.MCP_URL || "http://localhost:3001/tool";
 

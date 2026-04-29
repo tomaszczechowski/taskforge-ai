@@ -15,8 +15,8 @@
  */
 
 import axios from "axios";
-import { JiraIssue, TaskForgeConfigAgent, extractText, logger } from "@taskforge/shared";
-import { summarizeSpec } from "@taskforge/agent-core";
+import { JiraIssue, TaskForgeConfigAgent, extractText, logger } from "@taskforge-ai/shared";
+import { summarizeSpec } from "@taskforge-ai/agent-core";
 
 const MCP = process.env.MCP_URL || "http://localhost:3001/tool";
 

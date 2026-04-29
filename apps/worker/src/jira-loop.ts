@@ -14,6 +14,6 @@
  * limitations under the License.
  */
 
-import { jira } from "@taskforge/jira-client";
+import { jira } from "@taskforge-ai/jira-client";
 
 export const getAssignedTickets = jira.getAssignedTickets.bind(jira);

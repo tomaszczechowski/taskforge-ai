@@ -1,5 +1,5 @@
 {
-    "name": "@taskforge/jira-client",
+    "name": "@taskforge-ai/jira-client",
     "version": "0.1.0",
     "description": "Jira REST API v3 client for issue fetching, commenting, and workflow transitions used by the Taskforge agent.",
     "author": "Tomasz Czechowski <tomasz@czechowski.pl>",
@@ -18,7 +18,7 @@
     },
     "dependencies": {
         "axios": "^1.6.0",
-        "@taskforge/shared": "workspace:*"
+        "@taskforge-ai/shared": "workspace:*"
     },
     "devDependencies": {
         "typescript": "^5.4.0",

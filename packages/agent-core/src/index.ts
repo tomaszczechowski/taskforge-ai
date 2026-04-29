@@ -19,7 +19,7 @@ import { execSync } from "child_process";
 import { readFileSync, writeFileSync, mkdirSync } from "fs";
 import { join, dirname } from "path";
 import { checkoutBranch, commitAndPush, cleanupBranch } from "./git.js";
-import { extractText, logger, TaskForgeConfigAgent } from "@taskforge/shared";
+import { extractText, logger, TaskForgeConfigAgent } from "@taskforge-ai/shared";
 
 export * from "./git.js";
 

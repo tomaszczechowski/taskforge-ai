@@ -16,8 +16,8 @@
 
 import { getAssignedTickets } from "./jira-loop.js";
 import { processTicket } from "./processor.js";
-import type { JiraIssue, TaskForgeConfig } from "@taskforge/shared";
-import { logger } from "@taskforge/shared";
+import type { JiraIssue, TaskForgeConfig } from "@taskforge-ai/shared";
+import { logger } from "@taskforge-ai/shared";
 
 export * from "./implement.js";
 export * from "./jira-loop.js";

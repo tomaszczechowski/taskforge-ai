@@ -1,5 +1,5 @@
 {
-    "name": "@taskforge/worker",
+    "name": "@taskforge-ai/worker",
     "version": "0.1.0",
     "description": "Polling worker that processes Jira tickets through the spec → approval → implementation FSM.",
     "author": "Tomasz Czechowski <tomasz@czechowski.pl>",
@@ -17,10 +17,10 @@
         "dev": "tsx src/index.ts"
     },
     "dependencies": {
-        "@taskforge/github-client": "workspace:*",
-        "@taskforge/jira-client": "workspace:*",
-        "@taskforge/agent-core": "workspace:*",
-        "@taskforge/shared": "workspace:*",
+        "@taskforge-ai/github-client": "workspace:*",
+        "@taskforge-ai/jira-client": "workspace:*",
+        "@taskforge-ai/agent-core": "workspace:*",
+        "@taskforge-ai/shared": "workspace:*",
         "@anthropic-ai/sdk": "^0.39.0",
         "@anthropic-ai/claude-code": "^2.1.0"
     },

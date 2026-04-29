@@ -101,7 +101,7 @@ export const mcp = async (action: CommandMcpActions, opts: CommandMcp) => {
     const spinner = ora(`Starting MCP server on port ${port}...`).start();
 
     const require = createRequire(import.meta.url);
-    const mcpEntry = require.resolve("@taskforge/mcp-server");
+    const mcpEntry = require.resolve("@taskforge-ai/mcp-server");
 
     mkdirSync(PID_DIR, { recursive: true });
     const logFd = openSync(LOG_FILE, "a");

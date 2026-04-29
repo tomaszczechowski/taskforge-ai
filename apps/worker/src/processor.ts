@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-import { JiraIssue, JiraComment, extractText, logger, TaskForgeConfig, TaskForgeConfigAgentSpecAreas, TaskForgeConfigAgent } from "@taskforge/shared";
+import { JiraIssue, JiraComment, extractText, logger, TaskForgeConfig, TaskForgeConfigAgentSpecAreas, TaskForgeConfigAgent } from "@taskforge-ai/shared";
 import { askForSpec, askClaudeForSummary } from "./spec.js";
 import { implement } from "./implement.js";
-import { initRepo, syncRepo } from "@taskforge/agent-core";
+import { initRepo, syncRepo } from "@taskforge-ai/agent-core";
 
 /** Returns `true` if the comment body contains the configured agent marker (e.g. 🤖). */
 function isAgentComment(c: JiraComment, config: TaskForgeConfig): boolean {

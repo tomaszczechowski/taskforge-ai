@@ -38,7 +38,7 @@ export const start = async (opts: CommandStart) => {
 
     spinner.succeed(chalk.green("Agent started — polling for tickets"));
 
-    const { default: startWorker } = await import("@taskforge/worker");
+    const { default: startWorker } = await import("@taskforge-ai/worker");
 
     await startWorker(config, 0);
 };

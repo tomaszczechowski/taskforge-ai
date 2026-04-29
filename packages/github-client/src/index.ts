@@ -16,7 +16,7 @@
 
 import axios from "axios";
 import type { AxiosError } from "axios";
-import { logger } from "@taskforge/shared";
+import { logger } from "@taskforge-ai/shared";
 
 if (!process.env.GITHUB_TOKEN) throw new Error("GITHUB_TOKEN is required");
 

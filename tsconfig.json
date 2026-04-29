@@ -7,12 +7,12 @@
     "resolveJsonModule": true,
 
     "paths": {
-      "@taskforge/mcp-server": ["./apps/mcp-server/src"],
-      "@taskforge/worker": ["./apps/worker/src"],
-      "@taskforge/agent-core": ["./packages/agent-core/src"],
-      "@taskforge/jira-client": ["./packages/jira-client/src"],
-      "@taskforge/github-client": ["./packages/github-client/src"],
-      "@taskforge/shared": ["./packages/shared/src"]
+      "@taskforge-ai/mcp-server": ["./apps/mcp-server/src"],
+      "@taskforge-ai/worker": ["./apps/worker/src"],
+      "@taskforge-ai/agent-core": ["./packages/agent-core/src"],
+      "@taskforge-ai/jira-client": ["./packages/jira-client/src"],
+      "@taskforge-ai/github-client": ["./packages/github-client/src"],
+      "@taskforge-ai/shared": ["./packages/shared/src"]
     },
 
     "strict": true,

@@ -277,7 +277,7 @@ The table below documents known security, reliability, and correctness issues. C
 | **High** | Reliability | No FSM state is persisted — if the worker crashes mid-implementation, the ticket stays "In Progress" with no record of progress. The next poll may attempt re-implementation from scratch. |
 | **High** | Reliability | `git stash --include-untracked` in `checkoutBranch` is never popped on failure, leaving a dangling stash entry. |
 | **High** | Reliability | No retry logic on any I/O path - a single transient Jira, GitHub, or Claude timeout fails the entire ticket with no recovery. |
-| **High** | Scaleability | Single Agent run in one process, with hardcoded index = 0 in @taskforge/cli |
+| **High** | Scaleability | Single Agent run in one process, with hardcoded index = 0 in @taskforge-ai/cli |
 | **Medium** | Agent | The agent tends to modify more code than a ticket requires — it may refactor surrounding code, rename things, or touch unrelated files. Scope is not enforced; the model relies solely on the prompt instruction to "focus only on requirements". A diff-size budget or a file-allowlist derived from `files_to_modify` would help constrain it. |
 | **Medium** | Config | Worker reads `config.agents.list[n].poolingInterval` but the config type defines `interval`. If the field is `undefined`, `sleep(NaN)` resolves immediately and spins the loop. |
 | **Medium** | Reliability | The 40-turn agent loop has no wall-clock timeout — a hung model response blocks the worker indefinitely. |

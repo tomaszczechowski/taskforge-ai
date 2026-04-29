@@ -16,7 +16,7 @@
 
 import axios from "axios";
 import type { AxiosError } from "axios";
-import { logger } from "@taskforge/shared";
+import { logger } from "@taskforge-ai/shared";
 export * from "./types.js";
 
 if (!process.env.JIRA_URL) throw new Error("JIRA_URL is required");
