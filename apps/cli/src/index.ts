@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /**
  * Copyright 2026 Tomasz Czechowski <tomasz@czechowski.pl>
  *
@@ -16,13 +17,16 @@
 
 import { Command } from "commander";
 import { readFileSync } from "fs";
+import { fileURLToPath } from "url";
+import { dirname, resolve } from "path";
 import { init } from "./commands/init.js";
 import { CommandStart, start } from "./commands/start.js";
 import { CommandRun, run } from "./commands/run.js";
 import { list } from "./commands/list.js";
 import { mcp, CommandMcp } from "./commands/mcp.js";
 
-const pkg = JSON.parse(readFileSync("./package.json", "utf-8"));
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const pkg = JSON.parse(readFileSync(resolve(__dirname, "../package.json"), "utf-8"));
 const program = new Command();
 
 program.name("taskforge").description("AI agent that implements tickets automatically").version(pkg.version);

@@ -1,6 +1,6 @@
 {
   "name": "@taskforge-ai/cli",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "AI agent that implements tickets from Jira, and more",
   "author": "Tomasz Czechowski <tomasz@czechowski.pl>",
   "license": "Apache-2.0",
@@ -18,7 +18,7 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && chmod +x dist/index.js",
     "dev": "tsx src/index.ts"
   },
   "dependencies": {

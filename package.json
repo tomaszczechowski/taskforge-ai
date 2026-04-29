@@ -1,6 +1,5 @@
 {
   "name": "taskforge-ai",
-  "version": "0.1.2",
   "description": "Monorepo for Taskforge — an AI agent that reads Jira tickets, writes the implementation, and opens a GitHub PR with human approval at every step.",
   "author": "Tomasz Czechowski <tomasz@czechowski.pl>",
   "license": "Apache-2.0",

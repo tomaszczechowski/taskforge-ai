@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.1.3] - 2026-04-29
+
+### Fixed
+
+- Replaced `readFileSync("./package.json")` with `readFileSync(resolve(dirname(fileURLToPath(import.meta.url)), "../package.json"))` in `apps/cli/src/index.ts` — the old relative path resolved against the caller's working directory at runtime, so the file was never found when the CLI was installed globally and invoked from an arbitrary directory
+
+- Added `#!/usr/bin/env node` shebang as the first line of `apps/cli/src/index.ts` so the compiled `dist/index.js` is executed by Node.js rather than the shell when invoked as a CLI binary
+- Added `chmod +x dist/index.js` to the `apps/cli` build script to ensure the binary has execute permission after compilation
+
+---
+
 ## [0.1.2] - 2026-04-29
 
 ### Fixed
@@ -56,6 +67,8 @@ taskforge CLI
 
 ---
 
+[0.1.4]: https://github.com/tomaszczechowski/taskforge/compare/v0.1.3...v0.1.4
+[0.1.3]: https://github.com/tomaszczechowski/taskforge/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/tomaszczechowski/taskforge/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/tomaszczechowski/taskforge/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/tomaszczechowski/taskforge/releases/tag/v0.1.0
