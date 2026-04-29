@@ -1,6 +1,6 @@
 {
     "name": "@taskforge-ai/agent-core",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Claude API agentic loop for plan generation, spec summarisation, and code implementation with git operations.",
     "author": "Tomasz Czechowski <tomasz@czechowski.pl>",
     "license": "Apache-2.0",

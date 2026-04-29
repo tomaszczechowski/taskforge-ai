@@ -1,6 +1,6 @@
 {
     "name": "@taskforge-ai/github-client",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "GitHub API client for branch and pull request management used by the Taskforge agent.",
     "author": "Tomasz Czechowski <tomasz@czechowski.pl>",
     "license": "Apache-2.0",

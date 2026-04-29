@@ -1,6 +1,6 @@
 {
     "name": "@taskforge-ai/mcp-server",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "HTTP middleware server exposing Jira and GitHub tools to the Taskforge agent worker.",
     "author": "Tomasz Czechowski <tomasz@czechowski.pl>",
     "license": "Apache-2.0",

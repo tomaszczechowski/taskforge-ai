@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.1.1] - 2026-04-29
+
+### Added
+
+- `README.md` added to every app and package (`apps/cli`, `apps/mcp-server`, `apps/worker`, `packages/agent-core`, `packages/github-client`, `packages/jira-client`, `packages/shared`) with a description, key exports / capabilities, and a link back to the main repository README
+
+---
+
 ## [0.1.0] - 2026-04-27
 
 ### Added
@@ -40,4 +48,5 @@ taskforge CLI
 
 ---
 
+[0.1.1]: https://github.com/tomaszczechowski/taskforge/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/tomaszczechowski/taskforge/releases/tag/v0.1.0
