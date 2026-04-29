@@ -39,7 +39,7 @@ program
 program
     .command("start")
     .description("Start the polling agent worker")
-    .option("--path <path>", "local path to repo with taskforge.config.json and .env files", "./")
+    .option("--path <path>", "local path to repo with taskforge.config.json and .env files", process.cwd())
     .option("--interval <seconds>", "poll interval in seconds", "30")
     .action(async (opts: CommandStart) => await start(opts));
 
@@ -47,7 +47,7 @@ program
     .command("run <ticketId>")
     .description("Process a single ticket immediately")
     .option("--dry-run", "generate plan only, no code changes")
-    .option("--path <path>", "local path to repo with taskforge.config.json and .env files", "./")
+    .option("--path <path>", "local path to repo with taskforge.config.json and .env files", process.cwd())
     .option("--debug", "show more precise logs")
     .action(async (ticketId, opts: CommandRun) => await run(ticketId, opts));
 
@@ -59,7 +59,7 @@ program
 program
     .command("mcp <action>")
     .description("Control the MCP server. Actions: start / stop")
-    .option("--path <path>", "path containing .env file", "./")
+    .option("--path <path>", "path containing .env file", process.cwd())
     .option("--port <port>", "port to listen on", "3001")
     .action(async (action, opts: CommandMcp) => await mcp(action, opts));
 

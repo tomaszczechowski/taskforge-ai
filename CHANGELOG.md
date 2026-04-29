@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.1.4] - 2026-04-29
+
+### Fixed
+
+- Replaced `"./"` with `process.cwd()` in `apps/cli/src/index.ts` — use main directory where the command is invoked. Path "./" breaks reference to `taskforge.config.json` file.
+
+---
+
 ## [0.1.3] - 2026-04-29
 
 ### Fixed
