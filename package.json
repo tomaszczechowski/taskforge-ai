@@ -1,5 +1,5 @@
 {
-  "name": "taskforge-monorepo",
+  "name": "taskforge",
   "version": "0.1.0",
   "description": "Monorepo for Taskforge — an AI agent that reads Jira tickets, writes the implementation, and opens a GitHub PR with human approval at every step.",
   "author": "Tomasz Czechowski <tomasz@czechowski.pl>",
