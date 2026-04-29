@@ -1,4 +1,4 @@
-# Taskforge ![version](https://img.shields.io/badge/version-0.1.0-9F7AEA?style=flat-square)
+# Taskforge ![version](https://img.shields.io/badge/version-0.1.4-9F7AEA?style=flat-square)
 
 > **Early stage project — not production-ready.** Taskforge is a proof-of-concept for end-to-end "vibe coding" — an AI agent that reads tickets from Jira, asks clarifying questions, writes the implementation, and opens a pull request on GitHub, with a human approving each step. The goal is to demonstrate what a fully autonomous developer loop looks like in practice, not to be production-ready software. The project has [known security and reliability issues](#known-weak-points) — including unprotected secrets handling and no concurrency safety — that must be addressed before any production use.
 
@@ -250,6 +250,18 @@ taskforge CLI
 ```
 
 The agent loop is built directly on the Anthropic SDK — no LangChain or similar frameworks. The MCP server is a thin Express layer that the worker calls over HTTP.
+
+## Packages
+
+| Package | Version | Description |
+|---|---|---|
+| [`@taskforge-ai/cli`](https://www.npmjs.com/package/@taskforge-ai/cli) | ![npm](https://img.shields.io/npm/v/@taskforge-ai/cli?style=flat-square&color=9F7AEA) | CLI entry point — `init`, `start`, `run`, `list`, `mcp` commands |
+| [`@taskforge-ai/worker`](https://www.npmjs.com/package/@taskforge-ai/worker) | ![npm](https://img.shields.io/npm/v/@taskforge-ai/worker?style=flat-square&color=9F7AEA) | Polling worker that drives the spec → approval → implementation FSM |
+| [`@taskforge-ai/mcp-server`](https://www.npmjs.com/package/@taskforge-ai/mcp-server) | ![npm](https://img.shields.io/npm/v/@taskforge-ai/mcp-server?style=flat-square&color=9F7AEA) | Local HTTP bridge exposing Jira and GitHub tools to the agent |
+| [`@taskforge-ai/agent-core`](https://www.npmjs.com/package/@taskforge-ai/agent-core) | ![npm](https://img.shields.io/npm/v/@taskforge-ai/agent-core?style=flat-square&color=9F7AEA) | Anthropic SDK agentic loop — plan generation, spec summarisation, code implementation |
+| [`@taskforge-ai/jira-client`](https://www.npmjs.com/package/@taskforge-ai/jira-client) | ![npm](https://img.shields.io/npm/v/@taskforge-ai/jira-client?style=flat-square&color=9F7AEA) | Jira REST API v3 client — issue fetching, commenting, workflow transitions |
+| [`@taskforge-ai/github-client`](https://www.npmjs.com/package/@taskforge-ai/github-client) | ![npm](https://img.shields.io/npm/v/@taskforge-ai/github-client?style=flat-square&color=9F7AEA) | GitHub API client — branch and pull request management |
+| [`@taskforge-ai/shared`](https://www.npmjs.com/package/@taskforge-ai/shared) | ![npm](https://img.shields.io/npm/v/@taskforge-ai/shared?style=flat-square&color=9F7AEA) | Shared types, ADF utilities, and logger used across the monorepo |
 
 ---
 
