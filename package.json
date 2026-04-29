@@ -14,6 +14,7 @@
     "build:cli": "pnpm --filter @taskforge/cli build",
     "start:worker": "pnpm --filter @taskforge/worker start",
     "start:mcp": "pnpm --filter @taskforge/mcp-server start",
+    "publish": "pnpm --filter \"@taskforge/*\" publish",
     "format": "prettier --write \"apps/**/*.ts\" \"packages/**/*.ts\"",
     "format:check": "prettier --check \"apps/**/*.ts\" \"packages/**/*.ts\"",
     "lint": "eslint \"apps/**/*.ts\" \"packages/**/*.ts\"",
