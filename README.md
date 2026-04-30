@@ -6,8 +6,6 @@
 
 ![Taskforge](logo-wordmark.svg)
 
-<p align="center"><img src="logo.svg" alt="Taskforge Flow" width="300"/></p>
-
 <p align="center">
   <img src="demo.gif" alt="Taskforge CLI demo" width="80%" />
 </p>
