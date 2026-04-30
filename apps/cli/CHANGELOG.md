@@ -5,6 +5,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [0.1.6] - 2026-04-30
+
+### Fixed
+
+- `program.name()` updated from `taskforge` to `taskforge-ai` in `src/index.ts` — aligns the Commander program name with the bin key renamed in 0.1.6
+- Stop hint in `mcp start` console output corrected from `taskforge mcp stop` to `taskforge-ai mcp stop`
+
+---
+
 ## [0.1.5] - 2026-04-30
 
 ### Added
@@ -65,6 +74,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+[0.1.6]: https://github.com/tomaszczechowski/taskforge/compare/@taskforge-ai/cli@0.1.5...@taskforge-ai/cli@0.1.6
 [0.1.6]: https://github.com/tomaszczechowski/taskforge/compare/@taskforge-ai/cli@0.1.5...@taskforge-ai/cli@0.1.6
 [0.1.5]: https://github.com/tomaszczechowski/taskforge/compare/@taskforge-ai/cli@0.1.4...@taskforge-ai/cli@0.1.5
 [0.1.4]: https://github.com/tomaszczechowski/taskforge/compare/@taskforge-ai/cli@0.1.3...@taskforge-ai/cli@0.1.4

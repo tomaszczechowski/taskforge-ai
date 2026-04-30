@@ -134,5 +134,5 @@ export const mcp = async (action: CommandMcpActions, opts: CommandMcp) => {
     );
 
     console.log(chalk.dim(`Logs: ${LOG_FILE}`));
-    console.log(chalk.dim(`Stop: taskforge mcp stop`));
+    console.log(chalk.dim(`Stop: taskforge-ai mcp stop`));
 };

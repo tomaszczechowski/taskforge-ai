@@ -29,7 +29,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const pkg = JSON.parse(readFileSync(resolve(__dirname, "../package.json"), "utf-8"));
 const program = new Command();
 
-program.name("taskforge").description("AI agent that implements tickets automatically").version(pkg.version);
+program.name("taskforge-ai").description("AI agent that implements tickets automatically").version(pkg.version);
 
 program
     .command("init")

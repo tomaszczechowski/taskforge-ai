@@ -1,6 +1,6 @@
 {
     "name": "@taskforge-ai/cli",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "AI agent that implements tickets from Jira, and more",
     "author": "Tomasz Czechowski <tomasz@czechowski.pl>",
     "license": "Apache-2.0",
