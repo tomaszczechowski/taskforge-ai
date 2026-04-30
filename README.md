@@ -6,7 +6,7 @@
 
 <p align="center"><img src="logo.svg" alt="Taskforge Flow" width="300"/></p>
 
-<p align="center"><img src="demo.gif" alt="Taskforge CLI demo" width="500" /></p>
+<p align="center"><img src="demo.gif" alt="Taskforge CLI demo" width="800" /></p>
 
 > **Security & reliability notice.** This project is a proof-of-concept and has [known weak points](#known-weak-points) that make it unsuitable for production use without further hardening. Please review them before deploying.
 
