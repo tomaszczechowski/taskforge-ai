@@ -7,3 +7,4 @@ init.sql
 dist/
 .claude
 .npmrc
+demo.tape
