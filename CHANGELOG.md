@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.1.5] - 2026-04-30
+
+### Added
+
+- `apps/cli/src/utils.ts` — `getConfig(path)` helper that reads and parses `taskforge.config.json` with a typed return value (`TaskForgeConfig`)
+
+### Changed
+
+- `start` and `run` commands now use `getConfig()` instead of inlining `JSON.parse(readFileSync(...))`, giving both commands a typed config object
+- `run --dry-run` now passes `config.agents.list[0]` to `generatePlan` instead of the entire config, matching the expected agent-level argument
+
+---
+
 ## [0.1.4] - 2026-04-29
 
 ### Fixed
@@ -75,6 +88,7 @@ taskforge CLI
 
 ---
 
+[0.1.5]: https://github.com/tomaszczechowski/taskforge/compare/v0.1.4...v0.1.5
 [0.1.4]: https://github.com/tomaszczechowski/taskforge/compare/v0.1.3...v0.1.4
 [0.1.3]: https://github.com/tomaszczechowski/taskforge/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/tomaszczechowski/taskforge/compare/v0.1.1...v0.1.2

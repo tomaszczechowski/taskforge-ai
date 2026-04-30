@@ -16,7 +16,8 @@
 
 import chalk from "chalk";
 import ora from "ora";
-import { readFileSync, existsSync } from "fs";
+import { existsSync } from "fs";
+import { getConfig } from "../utils.js";
 
 export interface CommandRun {
     config: string;
@@ -35,7 +36,9 @@ export const run = async (ticketId: string, opts: CommandRun) => {
     const { config: envFile } = await import("dotenv");
     envFile({ path: `${opts.path}/.env` });
 
-    const config = JSON.parse(readFileSync(`${opts.path}/taskforge.config.json`, "utf-8"));
+    // supported only 1 agent in the same time.
+    const agentIndex = 0;
+    const config = getConfig(opts.path);
 
     if (opts.debug) process.env.DEBUG_LEVEL = "DEBUG";
 
@@ -49,7 +52,7 @@ export const run = async (ticketId: string, opts: CommandRun) => {
         if (opts.dryRun) {
             const { generatePlan } = await import("@taskforge-ai/agent-core");
             const planSpinner = ora("Generating plan...").start();
-            const plan = await generatePlan(issue, config);
+            const plan = await generatePlan(issue, config.agents.list[agentIndex]);
 
             planSpinner.succeed("Plan generated");
 

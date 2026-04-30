@@ -16,7 +16,8 @@
 
 import chalk from "chalk";
 import ora from "ora";
-import { readFileSync, existsSync } from "fs";
+import { existsSync } from "fs";
+import { getConfig } from "../utils.js";
 
 export interface CommandStart {
     path: string;
@@ -34,7 +35,7 @@ export const start = async (opts: CommandStart) => {
     const { config: envFile } = await import("dotenv");
     envFile({ path: `${opts.path}/.env` });
 
-    const config = JSON.parse(readFileSync(`${opts.path}/taskforge.config.json`, "utf-8"));
+    const config = getConfig(opts.path);
 
     spinner.succeed(chalk.green("Agent started — polling for tickets"));
 
