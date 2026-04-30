@@ -1,6 +1,6 @@
 {
     "name": "@taskforge-ai/shared",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "Shared types, ADF utilities, and logger used across the Taskforge monorepo.",
     "author": "Tomasz Czechowski <tomasz@czechowski.pl>",
     "license": "Apache-2.0",

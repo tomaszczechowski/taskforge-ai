@@ -1,6 +1,6 @@
 {
     "name": "@taskforge-ai/worker",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "Polling worker that processes Jira tickets through the spec → approval → implementation FSM.",
     "author": "Tomasz Czechowski <tomasz@czechowski.pl>",
     "license": "Apache-2.0",

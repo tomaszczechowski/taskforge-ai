@@ -15,6 +15,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 - `start` and `run` commands now use `getConfig()` instead of inlining `JSON.parse(readFileSync(...))`
 - `run --dry-run` passes `config.agents.list[0]` to `generatePlan` instead of the entire config object
+- `CHANGELOG.md` added to `"files"` in `package.json` so the changelog is included in the published npm tarball
 
 ---
 
@@ -64,6 +65,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+[0.1.6]: https://github.com/tomaszczechowski/taskforge/compare/@taskforge-ai/cli@0.1.5...@taskforge-ai/cli@0.1.6
 [0.1.5]: https://github.com/tomaszczechowski/taskforge/compare/@taskforge-ai/cli@0.1.4...@taskforge-ai/cli@0.1.5
 [0.1.4]: https://github.com/tomaszczechowski/taskforge/compare/@taskforge-ai/cli@0.1.3...@taskforge-ai/cli@0.1.4
 [0.1.3]: https://github.com/tomaszczechowski/taskforge/compare/@taskforge-ai/cli@0.1.2...@taskforge-ai/cli@0.1.3

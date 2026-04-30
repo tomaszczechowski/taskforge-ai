@@ -5,6 +5,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [0.1.3] - 2026-04-30
+
+### Changed
+
+- `CHANGELOG.md` added to `"files"` in `package.json` so the changelog is included in the published npm tarball
+
+---
+
 ## [0.1.2] - 2026-04-29
 
 ### Fixed
