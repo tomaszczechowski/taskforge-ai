@@ -1,6 +1,6 @@
-<svg viewBox="0 0 340 80" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg">
   <!-- Background -->
-  <rect width="340" height="80" fill="#ffffff" rx="8"/>
+  <rect width="400" height="80" fill="#ffffff" rx="8"/>
 
   <!-- Icon: Gear with lightning bolt -->
   <g transform="translate(40, 40)">
@@ -35,5 +35,5 @@
     font-weight="900"
     fill="#1a1a2e"
     letter-spacing="-1"
-  >Task<tspan fill="#9F7AEA">forge</tspan></text>
+  >Task<tspan fill="#9F7AEA">forge</tspan><tspan fill="#1a1a2e">AI</tspan></text>
 </svg>
