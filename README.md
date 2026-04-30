@@ -2,13 +2,13 @@
 
 > **Early stage project — not production-ready.** Taskforge is a proof-of-concept for end-to-end "vibe coding" — an AI agent that reads tickets from Jira, asks clarifying questions, writes the implementation, and opens a pull request on GitHub, with a human approving each step. The goal is to demonstrate what a fully autonomous developer loop looks like in practice, not to be production-ready software. The project has [known security and reliability issues](#known-weak-points) — including unprotected secrets handling and no concurrency safety — that must be addressed before any production use.
 
+> **Security & reliability notice.** This project is a proof-of-concept and has [known weak points](#known-weak-points) that make it unsuitable for production use without further hardening. Please review them before deploying.
+
 ![Taskforge](logo-wordmark.svg)
 
 <p align="center"><img src="logo.svg" alt="Taskforge Flow" width="300"/></p>
 
 <p align="center"><img src="demo.gif" alt="Taskforge CLI demo" width="800" /></p>
-
-> **Security & reliability notice.** This project is a proof-of-concept and has [known weak points](#known-weak-points) that make it unsuitable for production use without further hardening. Please review them before deploying.
 
 ---
 
