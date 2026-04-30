@@ -9,8 +9,11 @@
 <p align="center"><img src="logo.svg" alt="Taskforge Flow" width="300"/></p>
 
 <p align="center">
-  <img src="demo.gif" alt="Taskforge CLI demo" width="49%" />
-  <img src="jira.png" alt="Jira integration" width="49%" />
+  <img src="demo.gif" alt="Taskforge CLI demo" width="80%" />
+</p>
+
+<p align="center">
+  <img src="jira.png" alt="Jira integration" width="70%" />
 </p>
 
 ---
